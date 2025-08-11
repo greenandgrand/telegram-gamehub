@@ -1,0 +1,4 @@
+web/node_modules/
+bot/node_modules/
+web/dist/
+bot/.env
