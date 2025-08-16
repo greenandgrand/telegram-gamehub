@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react'
+import JumpBall from "./JumpBall"
 
 declare global {
   interface Window { Telegram: any }
@@ -102,6 +103,7 @@ export default function App() {
   const games = [
     { id: 'tapper', name: 'Tapper', component: <Tapper/> },
     { id: 'memory', name: 'Memory Match', component: <MemoryMatch/> },
+    { id: 'jump', name: 'Jump Ball', component: <JumpBall/> },
   ] as const
 
   const [active, setActive] = useState<(typeof games)[number]['id']>('tapper')
